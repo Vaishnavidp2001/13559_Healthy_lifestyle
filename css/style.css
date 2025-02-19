@@ -1,0 +1,246 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background: #f5f5f5;
+  /* Example background color, replace with an image if needed */
+  padding: 20px 0;
+  text-align: center;
+}
+
+header .hero-section {
+  margin: 20px auto;
+}
+
+header .hero-section h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header .hero-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Navigation menu styles */
+/* Basic reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  /* Replace with your preferred color or background */
+  padding: 15px 20px;
+  position: relative;
+}
+
+/* Logo or brand name */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  color: #007BFF;
+  /* Change hover color as needed */
+}
+
+/* Hamburger menu icon (hidden on larger screens) */
+.hamburger {
+  display: none;
+  /* will show on mobile via media query */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin-bottom: 4px;
+  border-radius: 2px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  /* Hide the nav links by default, show hamburger instead */
+  .nav-links {
+    display: none !;
+    /* hidden by default on small screens */
+    position: absolute;
+    top: 60px;
+    /* just below the navbar */
+    right: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Show the hamburger icon */
+  .hamburger {
+    display: flex;
+  }
+
+  /* When nav-links has 'open' class, display as flex */
+  .nav-links.open {
+    display: flex;
+  }
+}
+
+
+/* Best Combo Section */
+#best-combo {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#best-combo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.combo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.combo-item {
+  margin: 10px;
+  width: 200px;
+  /* adjust as needed */
+}
+
+.combo-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.combo-item h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Video / Info Section */
+#video-info {
+  background: #fafafa;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#video-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#video-info p {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+/* Special Menu Section */
+#special-menu {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#special-menu h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Blogs / Articles Section */
+#blogs {
+  background: #f5f5f5;
+  padding: 40px 20px;
+}
+
+#blogs h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-list a {
+  margin: 5px 0;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.blog-list a:hover {
+  text-decoration: underline;
+}
+
+/* Exercises / Diet Section */
+#exercises-diet {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#exercises-diet h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

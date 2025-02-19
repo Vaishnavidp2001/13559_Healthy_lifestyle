@@ -1,0 +1,78 @@
+/* Special Menu Section */
+#special-menu {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  #special-menu h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Container for the cards */
+  .special-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual Menu Card */
+  .menu-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Card Image */
+  .menu-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Card Content */
+  .menu-card-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .menu-card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .menu-card-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Call-to-action Button */
+  .menu-card-content .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8dc63f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .menu-card-content .cta-btn:hover {
+    background-color: #7bb130;
+  }
+  

@@ -1,0 +1,163 @@
+/* BLOGS / ARTICLES SECTION */
+#blogs {
+  padding: 40px 20px;
+  background-color: #ebf0d9;
+}
+
+/* Container to hold the left and right content */
+.special-dish-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* LEFT CONTENT */
+.left-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.small-heading {
+  font-size: 1.3rem;
+  color: #6d9d29;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* SMALL CARDS */
+.small-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Each small card */
+.small-card {
+  background: #fff;
+  border-radius: 8px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.small-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.small-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.small-card .price {
+  font-size: 1rem;
+  color: #8dc63f;
+  margin-bottom: 8px;
+}
+
+.small-card .desc {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* RIGHT CONTENT */
+.right-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+/* BIG CARD */
+.big-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.big-card .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.big-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.big-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.big-card .price {
+  font-size: 1rem;
+  color: #8dc63f;
+  margin-bottom: 20px;
+}
+
+.big-card .order-btn {
+  background-color: #8dc63f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.big-card .order-btn:hover {
+  background-color: #7bb130;
+}
+
+/* RESPONSIVE ADJUSTMENTS (Optional) */
+@media (max-width: 768px) {
+  .special-dish-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .left-content,
+  .right-content {
+    max-width: 100%;
+  }
+  .small-cards {
+    justify-content: center;
+  }
+#blogs{
+  display: flex;
+}
+}
+

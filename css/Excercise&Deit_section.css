@@ -1,0 +1,122 @@
+/* EXERCISES & DIET SECTION */
+.exercise-diet-section {
+    display: flex;
+    flex-wrap: wrap; /* So it stacks nicely on smaller screens */
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* LEFT CONTENT */
+  .ed-left {
+    flex: 1 1 300px; /* Grows/shrinks, min width 400px */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+  }
+  
+  .ed-left .ed-hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .ed-left h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .ed-left .ed-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* RIGHT CONTENT */
+  .ed-right {
+    flex: 1 1 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Cards Container (2×2 Grid) */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Each Card */
+  .ed-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .ed-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  
+  .ed-card img {
+    width: 100%;
+    height: 60%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .ed-card h3 {
+    font-size: 1.2rem;
+    margin: 15px;
+    color: #333;
+  }
+  
+  .ed-card p {
+    font-size: 0.95rem;
+    margin: 0 15px 20px;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  /* CTA Button */
+  .cta-btn {
+    margin: 0 15px 15px;
+    padding: 10px 20px;
+    background-color: #8dc63f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #7bb130;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 768px) {
+    .exercise-diet-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    .ed-left, .ed-right {
+      flex: 1 1 100%;
+      max-width: 600px; /* or 100% to fill width */
+    }
+    .cards-container {
+      grid-template-columns: 1fr; /* single column on smaller screens */
+    }
+  }
+  
