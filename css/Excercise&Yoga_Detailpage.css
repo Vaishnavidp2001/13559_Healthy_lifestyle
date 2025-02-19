@@ -76,12 +76,17 @@ p {
 
 .exercise-card,
 .yoga-card {
-    background-color: #f9f9f9;
+    background-color:#ebf0d9;
     width: 250px;
     text-align: center;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.exercise-card:hover ,
+.yoga-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .exercise-card img,
@@ -124,7 +129,7 @@ ul li::before {
 
 /* Combo Section */
 .combo-section {
-    background-color: #ecf0f1;
+    background-color:#ebf0d9;
 }
 
 .combo-section h2 {

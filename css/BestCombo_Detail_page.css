@@ -67,11 +67,15 @@ body {
 }
 
 .combo-card {
-    background: #fff;
+    background: #ebf0d9;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.combo-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .combo-card img {

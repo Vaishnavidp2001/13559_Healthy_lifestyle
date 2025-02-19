@@ -70,7 +70,7 @@ a {
 }
 
 .blog-card {
-    background-color: #f9f9f9;
+    background-color:#ebf0d9;
     width: 300px;
     text-align: center;
     padding: 20px;
@@ -100,7 +100,7 @@ a {
 
 .blog-card .read-more {
     font-size: 16px;
-    color: #3fee0e;
+    color: #8dc63f;
     font-weight: bold;
     transition: color 0.3s ease;
 }
